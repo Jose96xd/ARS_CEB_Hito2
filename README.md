@@ -1,7 +1,9 @@
 # ARS_CEB_Hito2
-Detección de comunidades utilizando algoritmos genéticos.
+Detección de comunidades utilizando algoritmos evolutivos multiobjetivo.
 
 El objetivo principal de esta práctica consiste en la definición de un método que permita la detección de comunidades en un grafo. Concretamente, se busca encontrar el método más adecuado que permita dividir en sus correspondientes comunidades una red de datos reales de Amazon, donde cada nodo es un artículo de Amazon y dos nodos están conectados entre sí cuando suficientes usuarios han comprado los dos artículos juntos. Esta red de Amazon se encuentra dividida en 8 comunidades correspondientes a las categorías de los productos.
+
+Como primera aproximación para intentar encontrar la fragmentación real que este grafo de Amazon presenta, se intentará optimizar la modularidad de la solución generada empleando el algoritmo de Leiden. Como segunda aproximación, se optimizará de manera simultánea la community_score y el internal_density de la solución encontrada empleando algoritmos evolutivos multiobjetivo. Posteriormente, se analizará la calidad de las soluciones generadas por los frentes de Pareto que estos algoritmos generan y se comparará con la solución real buscada para determinar su similitud.
 
 Para la ejecución de este notebook se puede emplear cualquier entorno que cuente con Python 3.10.12.
 Recomendamos usar Google Colab ya que es el entorno con el que se ha programado pero no es estrictamente necesario. Alternativas como Anaconda o Jupiter Lab son completamente válidas.
